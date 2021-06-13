@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftarkan Pekerjaan | Rekrut</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="daftar-container">
+      <div class="daftar-wrapper">
+        <div class="daftar-header">
+          <a href="./admin.html" class="back"
+            ><i class="fas fa-long-arrow-alt-left"></i
+          ></a>
+          <h1>Rekrut.</h1>
+        </div>
+        <form autocomplete="off" class="daftar-form">
+          <label for="company-img">Masukkan Gambar</label>
+          <input
+            type="file"
+            accept="image/*"
+            id="company-img"
+            onchange="previewImg()"
+          />
+          <!--  -->
+          <label for="preview-img">Lambang Perusahaan</label>
+          <div id="preview-img" class="preview-img">
+            <img src="" />
+          </div>
+          <!--  -->
+          <label for="job-title-input">Judul Pekerjaan</label>
+          <input
+            type="text"
+            id="job-title-input"
+            placeholder="Masukkan judul pekerjaan..."
+            required
+          />
+          <!--  -->
+          <label for="job-location-input">Lokasi</label>
+          <input
+            type="text"
+            id="job-location-input"
+            placeholder="Masukkan lokasi pekerjaan..."
+            required
+          />
+          <!--  -->
+          <button type="submit" class="daftar-btn" onclick="">
+            Daftarkan Pekerjaan
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

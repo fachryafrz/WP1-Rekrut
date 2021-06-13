@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="google" content="notranslate" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rekrut | Lowongan Pekerjaan</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav-container">
+      <a href="./admin.html" class="nav-logo"><h1>Rekrut.</h1></a>
+      <input type="checkbox" id="nav-res" onclick="navResponsive()" />
+      <label for="nav-res" class="nav-res">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul class="nav-links">
+        <li><a href="#home" class="home">Home</a></li>
+        <li><a href="#lokerr" class="lokerr">Cari Lowongan</a></li>
+        <li><a href="#about" class="about">Tentang Kami</a></li>
+      </ul>
+      <a href="./index.html" class="nav-admin" title="Logout"> Admin </a>
+    </div>
+    <!-- ===== -->
+    <section class="rekrut-container" id="home">
+      <p class="loker-banyak">33+ Pekerjaan terdaftar</p>
+      <h1 class="rekrut-header">
+        Website yang dikhususkan<br />
+        untuk mencari lowongan pekerjaan
+      </h1>
+      <p class="rekrut-desc">
+        Rekrut sangat cocok dengan Anda yang sedang mencari<br />
+        pekerjaan karena cepat dan mudah diakses.
+      </p>
+      <div class="loker-search">
+        <label for="loker-input">
+          <i class="fas fa-search"></i>
+        </label>
+        <input
+          type="text"
+          id="loker-input"
+          class="loker-input"
+          placeholder="Cari posisi pekerjaan..."
+          onkeyup="cariLoker()"
+        />
+        <a href="#lokerr" class="loker-cari">Cari</a>
+      </div>
+      <div class="loker-copyright">
+        <p class="copyright"><span>2021</span> &copy; Rekrut.</p>
+      </div>
+      <div class="bubble-container">
+        <div class="bubble-top">
+          <div class="bubble">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/600px-Google_%22G%22_Logo.svg.png"
+              alt=""
+            />
+          </div>
+          <div class="bubble">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="bubble-mid">
+          <div class="bubble">
+            <img src="https://pbs.twimg.com/media/EeLBSNQXsAA3Q5o.png" alt="" />
+          </div>
+          <div class="bubble">
+            <img
+              src="https://assets.tokopedia.net/assets-tokopedia-lite/v2/arael/kratos/36c1015e.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="bubble-bot">
+          <div class="bubble">
+            <img
+              src="https://www.freepnglogos.com/uploads/shopee-logo/shopee-bag-logo-free-transparent-icon-17.png"
+              alt=""
+            />
+          </div>
+          <div class="bubble">
+            <img
+              src="https://www.freepnglogos.com/uploads/logo-bca-png/bank-central-asia-kontak-kami-sukses-polindo-plastik-4.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== -->
+    <section class="loker-container" id="lokerr">
+      <h1 class="loker-list-header">Jelajahi pekerjaan popular!</h1>
+      <p class="loker-list-desc">Rekrut adalah platform tanpa biaya</p>
+      <ul class="loker-list">
+        <a href="#lokerr" class="loker">
+          <li>
+            <div class="loker-header">
+              <div class="loker-company-img">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png"
+                  alt=""
+                />
+              </div>
+              <div class="loker-company">
+                <h3 class="loker-company-name">Facebook</h3>
+                <p class="loker-posted">1 Hari lalu</p>
+              </div>
+              <p class="loker-kategori bisnis">Bisnis</p>
+            </div>
+            <div class="loker-body">
+              <h3 class="loker-title">Account Manager - Jakarta</h3>
+            </div>
+            <div class="loker-footer">
+              <p class="loker-lamar">8 Melamar</p>
+              <p>dari 10 Kapasitas</p>
+            </div>
+          </li>
+        </a>
+        <a href="#lokerr" class="loker">
+          <li>
+            <div class="loker-header">
+              <div class="loker-company-img">
+                <img
+                  src="https://pbs.twimg.com/media/EeLBSNQXsAA3Q5o.png"
+                  alt=""
+                />
+              </div>
+              <div class="loker-company">
+                <h3 class="loker-company-name">Instagram</h3>
+                <p class="loker-posted">2 Hari lalu</p>
+              </div>
+              <p class="loker-kategori webdev">Web Dev</p>
+            </div>
+            <div class="loker-body">
+              <h3 class="loker-title">Fullstack Developer - Bandung</h3>
+            </div>
+            <div class="loker-footer">
+              <p class="loker-lamar">12 Melamar</p>
+              <p>dari 32 Kapasitas</p>
+            </div>
+          </li>
+        </a>
+        <a href="#lokerr" class="loker">
+          <li>
+            <div class="loker-header">
+              <div class="loker-company-img">
+                <img
+                  src="https://www.freepnglogos.com/uploads/shopee-logo/shopee-bag-logo-free-transparent-icon-17.png"
+                  alt=""
+                />
+              </div>
+              <div class="loker-company">
+                <h3 class="loker-company-name">Shopee</h3>
+                <p class="loker-posted">2 Hari lalu</p>
+              </div>
+              <p class="loker-kategori desain">Desain</p>
+            </div>
+            <div class="loker-body">
+              <h3 class="loker-title">Product Designer - Surabaya</h3>
+            </div>
+            <div class="loker-footer">
+              <p class="loker-lamar">32 Melamar</p>
+              <p>dari 50 Kapasitas</p>
+            </div>
+          </li>
+        </a>
+        <a href="#lokerr" class="loker">
+          <li>
+            <div class="loker-header">
+              <div class="loker-company-img">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/600px-Google_%22G%22_Logo.svg.png"
+                  alt=""
+                />
+              </div>
+              <div class="loker-company">
+                <h3 class="loker-company-name">Google</h3>
+                <p class="loker-posted">3 Hari lalu</p>
+              </div>
+              <p class="loker-kategori webdev">Web Dev</p>
+            </div>
+            <div class="loker-body">
+              <h3 class="loker-title">Frontend Engineer - Jakarta</h3>
+            </div>
+            <div class="loker-footer">
+              <p class="loker-lamar">8 Melamar</p>
+              <p>dari 12 Kapasitas</p>
+            </div>
+          </li>
+        </a>
+        <a href="#lokerr" class="loker">
+          <li>
+            <div class="loker-header">
+              <div class="loker-company-img">
+                <img
+                  src="https://assets.tokopedia.net/assets-tokopedia-lite/v2/arael/kratos/36c1015e.png"
+                  alt=""
+                />
+              </div>
+              <div class="loker-company">
+                <h3 class="loker-company-name">Tokopedia</h3>
+                <p class="loker-posted">4 Hari lalu</p>
+              </div>
+              <p class="loker-kategori desain">Desain</p>
+            </div>
+            <div class="loker-body">
+              <h3 class="loker-title">Product Designer - Bekasi</h3>
+            </div>
+            <div class="loker-footer">
+              <p class="loker-lamar">32 Melamar</p>
+              <p>dari 50 Kapasitas</p>
+            </div>
+          </li>
+        </a>
+        <div href="#lokerr" class="loker-more-banyak">
+          <li>
+            <div class="loker-more-header">
+              <div class="loker-more-img">
+                <div class="loker-more"></div>
+                <div class="loker-more"></div>
+                <div class="loker-more"></div>
+                <div class="loker-more"></div>
+              </div>
+            </div>
+            <div class="loker-body">
+              <h3 class="loker-more-title">Cari +33 Pekerjaan lain</h3>
+            </div>
+            <div class="loker-more-footer">
+              <a href="./semua-loker.html" class="loker-more-cari"
+                >Cari semua pekerjaan</a
+              >
+            </div>
+          </li>
+        </div>
+      </ul>
+    </section>
+    <!-- ===== -->
+    <section class="kenalan-container" id="about">
+      <h1 class="kenalan-header">Kenalan yuk!</h1>
+      <p class="kenalan-desc">
+        Ayo kenalan dengan kami supaya <br />lebih akrab dan tahu tentang kami
+        lebih detail.
+      </p>
+      <div class="kenalan-grid">
+        <div class="kenalan-img-fachry kenalan-img">
+          <img src="./img/crop Fachry 2.jpg" alt="" />
+        </div>
+        <div class="kenalan-bio fachry">
+          <h2 class="kenalan-nama">Fachry Dwi Afriza</h2>
+          <p class="kenalan-quotes">
+            Founder dari "Rekrut" dan sangat tertarik tentang Web Development
+            bertugas sebagai Web Frontend Developer untuk membuat website dengan
+            tampilan yang menarik.
+          </p>
+        </div>
+        <div class="kenalan-bio hilman">
+          <h2 class="kenalan-nama">Hilman Hidayat</h2>
+          <p class="kenalan-quotes">
+            Co-Founder dari "Rekrut" dan memiliki tugas untuk mengelola,
+            menguji, dan melaksanakan sistem database dari sebuah web yg sudah
+            dibuat.
+          </p>
+        </div>
+        <div class="kenalan-img-hilman kenalan-img">
+          <img src="./img/crop Hilman.jpeg" alt="" />
+        </div>
+        <div class="kenalan-img-michael kenalan-img">
+          <img src="./img/crop Michael.jpeg" alt="" />
+        </div>
+        <div class="kenalan-bio michael">
+          <h2 class="kenalan-nama">Michael Christopher Dimas Aryanto</h2>
+          <p class="kenalan-quotes">
+            Sangat tertarik tentang pembuatan Web serta bertugas untuk
+            menganalisa seluruh lowongan pekerjaan yang terdaftar didalam
+            website Rekrut.
+          </p>
+        </div>
+        <div class="kenalan-bio novan">
+          <h2 class="kenalan-nama">Novan Rizkianto</h2>
+          <p class="kenalan-quotes">
+            Bertugas menjaga server agar tidak adanya gangguan dan tetap stabil
+            agar pengguna yang berkunjung tidak akan ada delay maupun gangguan
+            yang lainnya.
+          </p>
+        </div>
+        <div class="kenalan-img-novan kenalan-img">
+          <img src="./img/crop Novan.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- ===== -->
+    <section class="add-container">
+      <div class="add-grid">
+        <h1 class="add-header">Apakah Anda butuh karyawan?</h1>
+        <p class="add-desc">
+          Rekrut juga menyediakan tempat untuk para CEO untuk mendaftarkan
+          pekerjaan yang para CEO perlukan.
+        </p>
+        <div class="add-button">
+          <a href="./daftar-loker.html" class="add-daftar">Daftarkan</a>
+          <a href="#" class="add-info">Info lebih lanjut</a>
+        </div>
+      </div>
+    </section>
+    <!-- ===== -->
+    <div class="footer-container">
+      <div class="footer-grid">
+        <h1 class="footer-rekrut-header">Rekrut.</h1>
+        <div class="rekrut-batas"></div>
+        <ul class="footer-links">
+          <li><a href="#home" class="footer-link-top">Home</a></li>
+          <li><a href="#lokerr">Lowongan</a></li>
+          <li><a href="./daftar-loker.html">Daftarkan Pekerjaan</a></li>
+          <li><a href="#about" class="footer-link-bot">Tentang Kami</a></li>
+        </ul>
+        <div class="footer-rekrut">
+          <h1>Tentang Rekrut</h1>
+          <p>
+            Rekrut adalah sebuah website / platform yang bertujuan untuk
+            mempermudah masyarakat mencari lowongan pekerjaan yang mudah diakses
+            dan tanpa biaya apapun agar masyarakat tidak lagi sulit untuk
+            mencari pekerjaan dan dengan mudah mendapatkan pekerjaan dengan
+            skill yang dimiliki.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
