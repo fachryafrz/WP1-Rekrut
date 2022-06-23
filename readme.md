@@ -3,7 +3,7 @@
 Rekrut ini adalah project Web Programming tentang Lowongan Pekerjaan menggunakan HTML, CSS, Javascript dan PHP.
 
 Website kami juga dapat diakses melalui link ini:
-https://rekrut.netlify.app
+https://fachryafrz.github.io/WP1-Rekrut/
 
 Anggota kelompok:
 
